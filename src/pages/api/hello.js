@@ -4,7 +4,11 @@ interact with databases, or perform any other server-side operations.
 */
 
 export default (req, res) => {
-  res
-    .status(200)
-    .json({ message: "Welcome, Everyone in Demo Next js Project!" });
+  if (req.method === "POST") {
+    // Process a POST request
+  } else {
+    res
+      .status(200)
+      .json({ message: "Welcome, Everyone in Demo Next js Project!" });
+  }
 };
