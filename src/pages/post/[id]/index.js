@@ -1,6 +1,6 @@
 import LayoutWrapper from "@/Layouts";
 import { useRouter } from "next/router";
-function Post(props) {
+const Post = (props) => {
   const router = useRouter();
   const { id } = router.query;
   return (
@@ -11,6 +11,6 @@ function Post(props) {
       </div>
     </LayoutWrapper>
   );
-}
+};
 
 export default Post;

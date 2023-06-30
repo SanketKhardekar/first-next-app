@@ -1,8 +1,9 @@
 import LayoutWrapper from "@/Layouts";
+import { useRouter } from "next/router";
 import React from "react";
-const router = useRouter();
-const { reviewId } = router.query;
 const ReviewId = () => {
+  const router = useRouter();
+  const { reviewId } = router.query;
   return (
     <LayoutWrapper>
       <div>Review : {reviewId}</div>
